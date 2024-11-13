@@ -217,7 +217,7 @@ function init() {
       //xwingの後方から
       cameraPosition.lerpVectors(xwingTarget, xwingPosition, 4);
       cameraPosition.y += 2.5;
-      cameraPosition.copy(cameraPosition);
+      camera.position.copy(cameraPosition);
       camera.lookAt(xwing.position); //飛行機を見る
       camera.up.set(0,1,0); //カメラの上をy軸正の向きにする
     }
